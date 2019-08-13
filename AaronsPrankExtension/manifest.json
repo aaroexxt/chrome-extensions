@@ -1,0 +1,33 @@
+{
+"name": "Awesome Prank Extension",
+"manifest_version": 2,
+"version": "2.7.3",
+"author": "Aaron Becker",
+"icons": {
+  "128":"images/smile.png"
+},
+"web_accessible_resources": [
+  "images/*.jpg"
+],
+"description": "A bunch of awesome pranks for your family and friends. Includes 18 fun, simple pranks! Click icon (smiley face) to put pranks into page.",
+"browser_action": {
+    "default_title": "Put prank script into page",
+    "default_icon": {
+            "128": "images/smile.png"
+          }
+  },
+"background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+"permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ],
+"offline_enabled": true,
+"homepage_url": "http://localhost:8888",
+"short_name": "AwesomePranks"
+}

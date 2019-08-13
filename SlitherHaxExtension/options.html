@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SlitherHax Options</title>
+  <style>
+    body: { padding: 20px; }
+  </style>
+</head>
+
+<body>
+  Options for lag on page (recommended lag set to high):
+  <select id="lag">
+   <option value="low">Lag: Low, Accuracy low</option>
+   <option value="medium">Lag: Medium, Accuracy medium</option>
+   <option value="high">Lag: High, Accuracy high</option>
+   <option value="very high">Lag: Very High, Accuracy very high</option>
+  </select>
+<br>
+<br>
+  <label>
+    <input type="checkbox" id="showFPS">
+    Show FPS (recommended)?
+  </label>
+  <br>
+   <label>
+    <input type="checkbox" id="showTrack">
+    Show Tracking X and Y?
+  </label>
+  <br>
+  <br>
+   <label>
+    <input type="checkbox" id="showHackXY">
+    Show Hacked X and Y?
+  </label>
+  <br>
+   <label>
+    <input type="checkbox" id="showHack">
+    Show whether hack is on?
+  </label>
+  <br>
+
+   <label>
+    <input type="checkbox" id="showCrash">
+    Show crash indications (recommended)?
+  </label>
+  <br>
+   <label>
+    <input type="checkbox" id="showDead">
+    Show whether player is dead?
+  </label>
+  <br>
+   <label>
+    <input type="checkbox" id="showPointer">
+    Show pointer arrow?
+  </label>
+  <br>
+  <br>
+   <label>
+    <input type="checkbox" id="assistedControl">
+    Assisted control on?
+  </label>
+  <br>
+   <label>
+    <input type="checkbox" id="assistedCursor">
+    Show assistedControl cursor?
+  </label>
+  <br>
+   <label>
+    <input type="checkbox" id="assistedPoints">
+    Show assistedControl points?
+  </label>
+<br>
+<br>
+  <div id="status"></div>
+  <button id="save">Save</button>
+
+  <script src="options.js"></script>
+</body>
+</html>

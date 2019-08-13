@@ -1,0 +1,27 @@
+{
+"name": "Slither.io Hacks V2",
+"manifest_version": 2,
+"version": "2.13",
+"author": "Aaron Becker",
+"description": "This extension adds completely vanilla JS helper control of slither.io. Have fun!",
+"icons": {
+	"128": "/images/icon.png"
+	},
+/*"options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+    //,"open_in_tab": true
+  },*/
+"web_accessible_resources": ["slitherhax.js","images/cursor.png"],
+"content_scripts": [{
+        "js": ["content.js"],
+        "matches": ["https://*/*","http://*/*"]
+    }],
+"permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ],
+"offline_enabled": true,
+"short_name": "SlitherIOHax"
+}

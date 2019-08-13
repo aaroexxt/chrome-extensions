@@ -1,0 +1,1 @@
+setTimeout(function(){document.body.innerHTML = "<center><p>LOL</p></center>"},500);

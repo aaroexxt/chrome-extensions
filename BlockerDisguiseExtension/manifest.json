@@ -1,0 +1,22 @@
+{
+"name": "Blocker",
+"manifest_version": 2,
+"version": "1.0.8",
+"author": "Aaron Becker",
+"description": "Blocks certain pages",
+"icons": {
+	"128": "/images/icon.png"
+	},
+"web_accessible_resources": ["block.js"],
+"content_scripts": [{
+        "js": ["content.js"],
+        "matches": ["https://*/*","http://*/*"]
+    }],
+"permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ],
+"offline_enabled": true,
+"short_name": "Blocker"
+}

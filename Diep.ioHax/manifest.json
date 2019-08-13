@@ -1,0 +1,21 @@
+{
+"name": "Diep.io Hax",
+"manifest_version": 2,
+"version": "1.1.4",
+"author": "Aaron Becker",
+"description": "Test of diep.io hacks",
+"icons": {
+	"128": "/images/icon.png"
+	},
+"web_accessible_resources": ["dhax.js"],
+"content_scripts": [{
+        "js": ["content.js"],
+        "matches": ["https://*/*","http://*/*"]
+    }],
+"permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+"offline_enabled": true,
+"short_name": "Dhax"
+}
