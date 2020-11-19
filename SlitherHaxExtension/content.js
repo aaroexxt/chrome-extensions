@@ -14,5 +14,5 @@ img.src = chrome.extension.getURL('images/cursor.png');
 img.id = "cursor";
 document.body.appendChild(img);
 }
-local
+//local
 },500);

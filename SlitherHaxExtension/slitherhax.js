@@ -29,6 +29,14 @@ var showPointer = true;
 var assistedCursor = true;
 var assistedPoints = true;
 
+/*var canvases = document.getElementsByTagName("canvas");
+for (let i=0; i<canvases.length; i++) {
+    let cI = canvases[i];
+    if (cI.className == "nsi" && cI.width > 500) {
+        console.log("cI: "+cI);
+        cI.id = "slitherC";
+    }
+}*/
 
 var checkPoints = ["0,0","10,10","10,0","0,10","-10,-10","-10,0","0,-10","20,20","20,0","0,20","-20,-20","-20,0","0,-20","30,30","30,0","0,30","-30,-30","-30,0","0,-30","40,40","40,0","0,40","-40,-40","-40,0","0,-40","40,40","40,0","0,40","-40,-40","-40,0","0,-40"];
 var changePoints = ["600,0","-100,400","-100,300","600,580","-100,1000","1000,300","0,0","600,0","-100,400","-100,300","600,580","-100,1000","1000,300","0,0","600,0","-100,400","-100,300","600,580","-100,1000","1000,300","0,0","600,0","-100,400","-100,300","600,580","-100,1000","1000,300","0,0","600,0","-100,400","-100,300","600,580","-100,1000","1000,300","0,0"];
@@ -70,7 +78,7 @@ if (window.location.host == "slither.io") {
 
 for (i=0; i<document.getElementsByTagName("canvas").length; i++) {
     console.log("[SLITHERHAX] Searched canvases width: "+document.getElementsByTagName("canvas")[i].width); 
-    if (document.getElementsByTagName("canvas")[i].width == 1100) {
+    if (document.getElementsByTagName("canvas")[i].width > 1000) {
         console.log("[SLITHERHAX] Found canvas width of 1100, renaming"); 
         document.getElementsByTagName("canvas")[i].id="slitherC";
     }
